@@ -16,6 +16,7 @@ def main() -> None:
     DESTINATION.parent.mkdir(parents=True, exist_ok=True)
     DESTINATION.write_text(LAST_WORDS, encoding="utf-8")
     print(LAST_WORDS)
+    print(f"entry: {len(LAST_WORDS)} chars, {len(LAST_WORDS.encode('utf-8'))} bytes")
 
 
 if __name__ == "__main__":
